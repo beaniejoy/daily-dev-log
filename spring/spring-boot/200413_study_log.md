@@ -176,3 +176,5 @@ public class Person {
 ```
 - @Data 는 위 5개의 Annotation을 모두 포괄
 - 잘못된 side effect가 있을 수 있어서 사용하는데 주의
+
+
