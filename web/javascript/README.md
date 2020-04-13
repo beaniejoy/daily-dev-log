@@ -8,5 +8,5 @@
 ## 🏷️ Contents
 - 🔗[Basic](https://github.com/hanbinleejoy/daily-dev-log/blob/master/web/javascript/01_basic.md)  
 Statement, Keywords & Reserved Words, Identifier, Comment
-- 🔗Variables  
+- 🔗[Variables](https://github.com/hanbinleejoy/daily-dev-log/blob/master/web/javascript/02_variable.md)  
 var & const & let
