@@ -11,7 +11,7 @@
 ![image](https://user-images.githubusercontent.com/41675375/79139772-defe0080-7df1-11ea-9533-1b7feaf3c065.png)
 
 <p><img src="https://user-images.githubusercontent.com/41675375/79143133-a3fecb80-7df7-11ea-8261-1432ed09e8dc.png" width="500" height="400"></p>
-![image]()
+
 - 여기서 MariaDB가 기존에 설치되어 있어서 3306을 사용하고 있는 상황
 - '관리 도구 - 서비스'에 들어가서 MariaDB 서비스를 중지시키고 설치하면 3306을 사용할 수 있다.
 
