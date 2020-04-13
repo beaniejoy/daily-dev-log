@@ -6,7 +6,8 @@
 
 ## my document
 한 주제를 가지고 공부한 내용을 정리하는 노트
-- 🔗[My Java Document](https://github.com/hanbinleejoy/my-java-document)
+- 🔗[All About Java](https://github.com/hanbinleejoy/my-java-document)
+- 🔗[All About javascript](https://github.com/hanbinleejoy/daily-dev-log/tree/master/web/javascript)
 
 ### Blog
 [https://beaniejoy.tistory.com](https://beaniejoy.tistory.com)
