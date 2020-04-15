@@ -23,5 +23,5 @@ implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.4.1'
 - You have to set @Controller annotation instead of @RestController
 
 ## 🏷️ Contents
-- [Thymeleaf Layout](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring/spring-boot/thymeleaf)
+- [Thymeleaf Layout](https://github.com/hanbinleejoy/daily-dev-log/blob/master/spring/spring-boot/thymeleaf/thymeleaf-layout.md)
 - Thymeleaf 용법
