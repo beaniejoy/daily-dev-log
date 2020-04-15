@@ -12,7 +12,6 @@
 ## Setting
 ```gradle
 implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-
 // thymeleaf-layout
 implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.4.1'
 ```
@@ -24,5 +23,5 @@ implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.4.1'
 - You have to set @Controller annotation instead of @RestController
 
 ## 🏷️ Contents
-- Thymeleaf Layout
+- [Thymeleaf Layout](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring/spring-boot/thymeleaf)
 - Thymeleaf 용법
