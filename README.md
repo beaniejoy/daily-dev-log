@@ -9,14 +9,13 @@
 
 ## Dev Document
 개발 관련 정리 노트
-- 🔗[All About Java](https://github.com/hanbinleejoy/my-java-document)
-- 🔗[All About javascript](https://github.com/hanbinleejoy/daily-dev-log/tree/master/web/javascript)
-- 🔗[All About Spring](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring)
+- 🔗[Java](https://github.com/hanbinleejoy/my-java-document)
+- 🔗[JavaScript](https://github.com/hanbinleejoy/daily-dev-log/tree/master/web/javascript)
+- 🔗[Spring](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring)
 
 ## Computer Science
 컴퓨터 관련 정리 노트
-- [About Network](https://github.com/hanbinleejoy/daily-dev-log/tree/master/network)
-
+- 🔗[Network](https://github.com/hanbinleejoy/daily-dev-log/tree/master/network)
 
 
 ### Blog

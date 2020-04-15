@@ -5,11 +5,9 @@
 📚 Spring Framework & Boot의 개념을 정리한 Spring 정리노트 📚
 
 ## 🏷️ Contents
-
 - Spring
-
 - Spring Boot
-  - [Thymeleaf]()
+  - [Thymeleaf](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring/spring-boot/thymeleaf)
 
 
 
