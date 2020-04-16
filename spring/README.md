@@ -7,8 +7,9 @@
 ## 🏷️ Contents
 - Spring
 - Spring Boot
-  - JPA - CRUD
-  - JPA - QueryMethod
+  - [JPA](https://github.com/hanbinleejoy/daily-dev-log/blob/master/spring/spring-boot/boot-admin-dev/200416_JPA_log.md) 
+    - CRUD
+    - QueryMethod
   - [Thymeleaf](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring/spring-boot/thymeleaf)
 
 
