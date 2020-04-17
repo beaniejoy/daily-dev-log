@@ -5,12 +5,10 @@
 📚 Spring Framework & Boot의 개념을 정리한 Spring 정리노트 📚
 
 ## 🏷️ Contents
-- Spring
-- Spring Boot
-  - [JPA](https://github.com/hanbinleejoy/daily-dev-log/blob/master/spring/spring-boot/boot-admin-dev/200416_JPA_log.md) 
-    - CRUD
-    - QueryMethod
-  - [Thymeleaf](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring/spring-boot/thymeleaf)
+- Lombok
+- REST API
+- JPA 
+- [Thymeleaf](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring/spring-boot/thymeleaf)
 
 
 
