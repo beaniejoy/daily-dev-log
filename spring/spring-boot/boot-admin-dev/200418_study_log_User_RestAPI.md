@@ -6,6 +6,7 @@
 
 Header - Data - Paging으로 나누어 Response를 보낸다.
 
+<br>
 
 ### JSON에 snake case로 데이터 보내기
 
@@ -19,6 +20,7 @@ Header - Data - Paging으로 나누어 Response를 보낸다.
 spring.jackson.property-naming-strategy=SNAKE_CASE
 ```
 개발 할 때는 camel case로 하고 데이터를 주고 받을 때는 snake case
+<br>
 
 ### 프로젝트 패키지 구성
 ```
@@ -39,6 +41,7 @@ project
     - service
         - [UserApiLogicService.java]
 ```
+<br>
 
 ### Header class 만들기
 ```java
@@ -95,6 +98,7 @@ public class Header<T> {
 - `header`: api 통신시간, api 응답코드, api 부가설명
 - `data`: Reqeust, Response에 주고받는 실제 데이터 내용
 
+<br>
 
 ### Crud Interface Generic으로 구성하기
 
@@ -191,6 +195,8 @@ public class UserApiController implements CrudInterface<UserApiRequest, UserApiR
 > - 이렇게 하면 Request로 받은 Header(+ data) 정보를 가져오고
 > - 받은 Header정보에서 data를 꺼내 DB에 저장하고 다시 Header에 붙여서 반환해준다.
 
+<br>
+<br>
 
 ## 🔖 2. Header **Read** 구성
 
@@ -212,6 +218,7 @@ public class UserApiController implements CrudInterface<UserApiRequest, UserApiR
 ```
 위에 처럼 Optional로 받아서 있는 경우 response 메서드로 Header를 만들어 반환하거나  
 select된 user가 없는 경우 ERROR로 만들어 반환하는 방법이 있다.  
+<br>
 
 위의 코드를 Refactoring하면 다음과 같다:
 ```java
@@ -226,6 +233,8 @@ select된 user가 없는 경우 ERROR로 만들어 반환하는 방법이 있다
     }
 ```
 lambda 함수 부분을 `this::response`로 바꿀 수 있다.
+<br>
+<br>
 
 
 ## 🔖 3. Header **Update** 구성
@@ -264,6 +273,8 @@ lambda 함수 부분을 `this::response`로 바꿀 수 있다.
 5. save 후 return값을 Response객체로 바꾸고 Header와 합쳐서 반환해준다.
 6. 만약 해당 id의 데이터가 없을 경우 ERROR Header객체를 반환한다.
 
+<br>
+<br>
 
 
 ## 🔖 4. Header **Delete** 구성
@@ -285,6 +296,8 @@ lambda 함수 부분을 `this::response`로 바꿀 수 있다.
 1. id를 가지고 Repository에서 data를 가져온다.
 2. 가져온 데이터를 delete시켜준다. 그리고 OK Header를 반환한다. (데이터 포함 X)
 3. 만약 해당 id의 데이터가 없을 경우 ERROR Header객체를 반환한다.
+<br>
+<br>
 
 > **Request와 Response는 구성이 거의 비슷한데 왜 따로 구별지어서 만들어 둔 것일까?**  
 > 그 때 그 때 스펙 요구에 따라 Reqeust와 Response 객체의 내용이 바뀌기 때문에 그렇다.  
