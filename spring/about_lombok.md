@@ -98,8 +98,9 @@ public class Person() {
 
 ## `@NoArgsConstructor` & `@AllArgsConstructor` & `@RequiredArgsConstructor`
 
+> - 생성자 형태와 관련된 Lombok
 
 ## `@Builder`
 
-
+> - Builder Pattern을 설정해주는 Lombok
 
