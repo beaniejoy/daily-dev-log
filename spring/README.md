@@ -5,7 +5,7 @@
 📚 Spring Framework & Boot의 개념을 정리한 Spring 정리노트 📚
 
 ## 🏷️ Contents
-- Lombok
+- [Lombok](https://github.com/hanbinleejoy/daily-dev-log/blob/master/spring/about_lombok.md)
 - REST API
 - JPA 
 - [Thymeleaf](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring/spring-boot/thymeleaf)
