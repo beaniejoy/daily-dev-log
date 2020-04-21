@@ -8,7 +8,7 @@ Header - Data - Paging으로 나누어 Response를 보낸다.
 
 <br>
 
-### JSON에 snake case로 데이터 보내기
+### JSON에 Snake Case로 데이터 보내기
 
 ```java
     // json에 보낼 때 해당 이름으로 지정해준다.

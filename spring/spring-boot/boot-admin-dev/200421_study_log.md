@@ -49,3 +49,29 @@ public abstract class CrudController<Req, Res, Entity> implements CrudInterface<
 
 <br>
 
+
+## 🔖 2. 초기화 후 샘플 데이터 추가하기
+
+```sql
+TRUNCATE TABLE admin_user;
+TRUNCATE TABLE category;
+TRUNCATE TABLE item;
+TRUNCATE TABLE order_detail;
+TRUNCATE TABLE order_group;
+TRUNCATE TABLE partner;
+TRUNCATE TABLE user;
+```
+- truncate를 사용해 모든 table에 대해서 초기화를 진행해준다.
+- 초기화를 하고 다시 데이터를 insert하면 id가 1부터 시작한다.
+
+<br>
+
+```gradle
+testCompileOnly 'org.projectlombok:lombok'
+testAnnotationProcessor 'org.projectlombok:lombok'
+```
+test 코드에서 `@Slf4j` annotation에서 오류가 발생하면 위의 두 개의 설정을 gradle에 추가해주고 reimport해준다.
+
+<br>
+
+
