@@ -14,7 +14,7 @@
 - 🔗[Java](https://github.com/hanbinleejoy/my-java-document)
 - 🔗[JavaScript](https://github.com/hanbinleejoy/daily-dev-log/tree/master/web/javascript)
 - 🔗[Spring](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring)
-- 🔗[Vue]](https://github.com/hanbinleejoy/daily-dev-log/tree/master/vue)
+- 🔗[Vue](https://github.com/hanbinleejoy/daily-dev-log/tree/master/vue)
 
 
 ## Computer Science
