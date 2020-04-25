@@ -4,14 +4,18 @@
 - written by hanbinleejoy(Beanie)
 - since 20.04.10
 
-> commit description - log에 대한 내용 list 기술  
-> commit에 마우스 커서를 두면 해당 log에 대한 내용을 볼 수 있습니다.
+> 📝**Commit template**📝  
+> `[yymmdd] [[Directory Name]] [description]`  
+> ex) 200401 [spring/spring-boot] REST API 정리 내용
+
 
 ## Dev Document
 개발 관련 정리 노트
 - 🔗[Java](https://github.com/hanbinleejoy/my-java-document)
 - 🔗[JavaScript](https://github.com/hanbinleejoy/daily-dev-log/tree/master/web/javascript)
 - 🔗[Spring](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring)
+- 🔗[Vue]](https://github.com/hanbinleejoy/daily-dev-log/tree/master/vue)
+
 
 ## Computer Science
 컴퓨터 관련 정리 노트
