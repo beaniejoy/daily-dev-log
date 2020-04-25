@@ -8,7 +8,7 @@
 - [Lombok](https://github.com/hanbinleejoy/daily-dev-log/blob/master/spring/about_lombok.md)
 - REST API
 - JPA 
-- [Thymeleaf](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring/spring-boot/thymeleaf)
+- [Thymeleaf](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring/thymeleaf)
 
 
 
