@@ -19,8 +19,8 @@ implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.4.1' // thyme
 - You have to set @Controller annotation instead of @RestController
 
 ## 🏷️ Contents
-- 🔗[Thymeleaf Layout](https://github.com/hanbinleejoy/daily-dev-log/blob/master/spring/spring-boot/thymeleaf/thymeleaf-layout.md)
-- 🔗[Thymeleaf 용법](https://github.com/hanbinleejoy/daily-dev-log/blob/master/spring/spring-boot/thymeleaf/thymeleaf-usage.md)
+- 🔗[Thymeleaf Layout](https://github.com/hanbinleejoy/daily-dev-log/blob/master/spring/thymeleaf/thymeleaf-layout.md)
+- 🔗[Thymeleaf 용법](https://github.com/hanbinleejoy/daily-dev-log/blob/master/spring/thymeleaf/thymeleaf-usage.md)
 
 ## Issue
 - [Fragment Expressions](https://github.com/thymeleaf/thymeleaf/issues/451)
