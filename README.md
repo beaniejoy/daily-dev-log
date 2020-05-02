@@ -20,7 +20,3 @@
 ## Computer Science
 컴퓨터 관련 정리 노트
 - 🔗[Network](https://github.com/hanbinleejoy/daily-dev-log/tree/master/network)
-
-
-### Blog
-[https://beaniejoy.tistory.com](https://beaniejoy.tistory.com)
