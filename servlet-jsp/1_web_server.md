@@ -6,6 +6,8 @@
 - 클라이언트에서 요청하면 서버에서 해당하는 소프트웨어를 실행해주는 형태.
 - 소켓, RPC등, 클라이언트와 서버간의 전달방법이 여러가지가 있다.
 
+### Client-Server programming의 한계
+
 > - Client: 프로그램 업데이트의 어려움(재설치)
 > - Data: 데이터 전송에 대한 구현의 어려움
 
@@ -21,7 +23,7 @@ Web을 통해 다음과 같은 변화가 생겼다.
 이렇게 되면 사용자 요청에 따라 변화할 수 있는 부분을 서버에서 관리, 처리해주기 때문에 클라이언트는 브라우저외의 다른 프로그램은 필요 없어지게 된다.  
 (프로그램 재설치의 문제)
 
-> Client-Server 프로그램 → 웹 프로그램(Client X, Server개발)
+> Client-Server 프로그램 → **웹 프로그램(Client X, Server개발)**
 
 요즘에는 javascript를 이용해 page를 요청하는 것이 아닌 **데이터 요청**으로 바뀌었다. 그 외 나머지 page부분은 front에서 담당하게 되었다.  
 (Front-end, Back-end 개념 등장)
@@ -29,7 +31,8 @@ Web을 통해 다음과 같은 변화가 생겼다.
 <br>
 
 > ### 정적 페이지 (Static Page)
-> DB에서 데이터를 가져오는 등의 별도의 서버처리를 하지 않고 어떤 사용자든 상관없이 동일한 페이지를 내보낸다.
+> DB에서 데이터를 가져오는 등의 별도의 서버처리를 하지 않고 어떤 사용자든 상관없이 동일한 페이지를 내보낸다.  
+> html, css, js, image 등의 요소들이 해당
 
 
 > ### 동적 페이지 (Dynamic Page)
@@ -37,24 +40,43 @@ Web을 통해 다음과 같은 변화가 생겼다.
 
 <br>
 
-## WAS의 등장
+## Web Server와 WAS
 
-> Web Application Server의 약어
+> ### Web Server
+> - 클라이언트가 요청한 **정적**인 콘텐츠를 HTTP 프로토콜을 통하여 제공해주는 서버(정적인 페이지 제공이 핵심)
+> - 클라이언트 요청에 따라 동적인 처리가 필요할 때 Container로 보내주는 역할 담당
+> - Apache HTTP Server, Nginx, Node.js(자체 웹서버 내장), Google Web Server 등이 있다
+> ### Container
+> - 클라이언트 요청에 따라 동적으로 데이터를 가져와 정적인 페이지로 생성해주는 소프트웨어 모듈
+> - java기반에서는 `Servlet` Container를 사용
+> ### WAS
+> - 웹서버와 Container를 붙여놓은 서버
+> - 웹서버로 오는 요청 중 동적인 서비스 처리를 담당한다
 
-
-user list에 대한 정보들을 요청한 상황을 예로 들면 GET member/list를 해야한다. 그런데 user 정보는 사용자가 개개인의 정보를 직접 수정하고 삭제하 수 있기 때문에 시시각각 데이터가 변화한다. 즉 서버에서 정적으로 응답을 해줄 수가 없다. 결국 서버는 DB와 연결해서 데이터를 받아 그 정보들을 가공해 응답을 해주어야 한다. 여기서 WAS가 등장한 것이다.
+user list에 대한 정보들을 요청한 상황을 예로 들면 `GET member/list`를 해야한다. 그런데 user 정보는 사용자가 개개인의 정보를 직접 수정하고 삭제하 수 있기 때문에 시시각각 데이터가 변화한다. 즉 서버에서 정적으로 응답을 해줄 수가 없다. 결국 서버는 DB와 연결해서 데이터를 받아 그 정보들을 가공해 응답을 해주어야 한다. 여기서 WAS가 등장한 것이다.
 
 - Server Application: 동적으로 문서를 만들기 위한 코드들
 - Web Server: 코드를 실행할 수 있는 실행환경
 - **WAS: 코드를 찾아서 실행해줄 수 있는 환경**
 
-WAS의 종류는 많지만 **Tomcat**을 가장 많이 사용한다.
+WAS는 apache tomcat, JEUS 등이 있다. 
+
+## tomcat + web server 연동
+
+tomcat은 웹서버와 WAS 둘 다 포괄하지만 WAS로서 기능을 한다. (사실 WAS가 web server + container)  
+하지만 html과 같은 정적인 페이지를 로딩하는데 다른 웹서버보다 속도가 느리다.  
+이를 해결하기 위해 정적인 페이지 처리를 담당하는 기능으로써 다른 웹서버와 연동해 동적인 처리에만 집중하도록 했다.  
+
+<p><img src="https://user-images.githubusercontent.com/41675375/80943603-8f27bd80-8e22-11ea-9f44-9915b108653c.png" width="850" height="200"></p>
 
 
-> ### Web Server
-> ### WAS
+- Nginx, Apache 서버와 같은 웹서버와 연동
+- jsp파일, 동적인 처리 필요할 때 tomcat으로 넘김
 
 
+
+
+## 참고
 
 - [웹서버와 WAS, 컨테이너 개념 설명 참고](http://melonicedlatte.com/web/2019/06/23/210300.html)
 

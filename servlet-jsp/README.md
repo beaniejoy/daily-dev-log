@@ -4,8 +4,8 @@
 
 ## 🏷️ Contents
 
-- Web Server 개요
+- [Web Server 개요](https://github.com/hanbinleejoy/daily-dev-log/blob/master/servlet-jsp/1_web_server.md)
   - 웹 프로그래밍 배경
-  - Web Server와 WAS의 등장
+  - Web Server & WAS
 
 
