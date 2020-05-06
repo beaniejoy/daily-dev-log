@@ -13,12 +13,12 @@ IDE를 이용하면 위의 과정을 `ctrl` + `f11`로 한번에 가능(IDE를 �
 ```xml
 <servlet>
     <servlet-name>na</servlet-name>
-    <servlet-class>Add</servlet-class>
+    <servlet-class>com.beanie.web.Hello</servlet-class>
 </servlet>
 
 <servlet-mapping>
     <servlet-name>na</servlet-name>
-    <url-pattern>/add</url-pattern>
+    <url-pattern>/hello</url-pattern>
 </servlet-mapping>
 ```
 `/hello`과 `Hello.java`를 mapping하고자 할 때 xml 설정  
