@@ -9,4 +9,9 @@
   - Web Server & WAS
 - [Tomcat 실행하기](https://github.com/hanbinleejoy/daily-dev-log/blob/master/servlet-jsp/2_tomcat_startup.md)
   - Tomcat Home directory(Context Site)
-  - Servlet 프로그램 실행(HttpServlet)
+  - Servlet 프로그램 실행(HttpServlet 코드 실행)
+- [Servlet 코드 작성하기](https://github.com/hanbinleejoy/daily-dev-log/blob/master/servlet-jsp/3_servlet_code_write.md)
+  - Annotation 이용한 url mapping
+  - Servlet 입출력 형식 설정(한글, 콘텐츠 형식 지정)
+  - GET / POST 요청에 따른 처리
+- Servlet 필터
