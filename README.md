@@ -15,7 +15,7 @@
 - 🔗[JavaScript](https://github.com/hanbinleejoy/daily-dev-log/tree/master/web/javascript)
 - 🔗[Spring](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring)
 - 🔗[Vue](https://github.com/hanbinleejoy/daily-dev-log/tree/master/vue)
-
+- 🔗[Servlet/JSP](https://github.com/hanbinleejoy/daily-dev-log/tree/master/servlet-jsp)
 
 ## Computer Science
 컴퓨터 관련 정리 노트
