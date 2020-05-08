@@ -8,6 +8,7 @@
 | :------------------ | :-------------------------- |
 | 새로열기                | `ctrl` + `n`                |
 | 편집창 전체화면            | `ctrl` + `m`                |
+| 파일 창 이동             | `ctrl` + `f6`               |
 | 실행                  | `ctrl` + `f11`              |
 | 자동정리                | `ctrl` + `shift` + `f`      |
 | 함수자동만들기             | `ctrl` + `spacebar`         |
@@ -23,6 +24,18 @@
 | hashcode, equals    | `alt` + `shift` + `s` / `h` |
 | 자동 import           | `ctrl` + `shift` + `o`      |
 | System.out.println  | "syso" + `ctrl` + `space`   |
+
+<br>
+
+## IntelliJ
+
+| 내용              | 단축키                      |
+| :-------------- | :----------------------- |
+| Code 편집창 전체화면   | `ctrl` + `shift` + `f12` |
+| 자동 완성 추천        | `ctrl` + `alt` + `l`     |
+| Test Code 이동/생성 | `ctrl` + `shift` + `t`   |
+| 파일 창 이동         | `ctrl` + `tab`           |
+
 
 <br>
 
