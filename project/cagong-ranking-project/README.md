@@ -23,4 +23,4 @@
 - controller refactoring을 통해 코드 정리하기
 - CafeNotFound, ScoreSetNotFound 등 Exception에 대한 handling 처리
 - 세련된 design 작업
-
+- contextPath를 이용한 href(url) 설정하기
