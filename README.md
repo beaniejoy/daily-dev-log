@@ -4,9 +4,10 @@
 - written by hanbinleejoy(Beanie)
 - since 20.04.10
 
-> 📝**Commit template**📝  
-> `[yymmdd] [[Directory Name]] [description]`  
-> ex) 200401 [spring/spring-boot] REST API 정리 내용
+📝**Commit template**📝  
+`[yymmdd] [[Directory Name]] [description]`  
+ex) 200401 [spring/spring-boot] REST API 정리 내용
+
 
 
 ## Dev Document
