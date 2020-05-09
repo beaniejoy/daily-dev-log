@@ -101,3 +101,22 @@ console.log(age); // 38
 ```
 - 조건문과 반복문에서도 block scope가 적용된다.
 - **var의 function scope와 const, let의 block scope 차이 존재 (ES6부터는 block scope중시)**
+
+<br>
+
+```js
+var c = 0;
+{
+    c++;
+    console.log(c);
+}
+
+{
+    var d = 0;
+    console.log(d);
+}
+d++;
+console.log(d); // 가능
+```
+- const, let은 불가능했지만 var는 가능
+- var는 함수 scope에 따라서 움직이기 때문

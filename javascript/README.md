@@ -6,7 +6,15 @@
 
 
 ## 🏷️ Contents
+
+#### Basic 
 - 🔗[Basic](https://github.com/hanbinleejoy/daily-dev-log/blob/master/web/javascript/01_basic.md)  
 Statement, Keywords & Reserved Words, Identifier, Comment
 - 🔗[Variables](https://github.com/hanbinleejoy/daily-dev-log/blob/master/web/javascript/02_variable.md)  
 var & const & let
+- 🔗[Hoisting](https://github.com/hanbinleejoy/daily-dev-log/blob/master/web/javascript/03_hoisting.md)
+- 🔗[Data-Type](https://github.com/hanbinleejoy/daily-dev-log/blob/master/web/javascript/04_data_type.md)
+
+#### Dev
+- 🔗[Ajax](https://github.com/hanbinleejoy/daily-dev-log/blob/master/web/javascript/ajax.md)
+- 🔗[Method-Collector](https://github.com/hanbinleejoy/daily-dev-log/blob/master/web/javascript/all_collector.md)
