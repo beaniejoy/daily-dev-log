@@ -1,6 +1,6 @@
 # Web Server 개요
 
-## 웹 프로그래밍 간단한 배경
+## 🔖 웹 프로그래밍 간단한 배경
 
 - 클라이언트, 서버의 등장. 
 - 클라이언트에서 요청하면 서버에서 해당하는 소프트웨어를 실행해주는 형태.
@@ -42,7 +42,7 @@ html, css, js, image 등의 요소들이 해당
 
 <br>
 
-## Web Server와 WAS
+## 🔖 Web Server와 WAS
 
 ### Web Server
 - 클라이언트가 요청한 **정적**인 콘텐츠를 HTTP 프로토콜을 통하여 제공해주는 서버(정적인 페이지 제공이 핵심)
@@ -67,7 +67,7 @@ WAS는 apache tomcat, JEUS 등이 있다.
 
 <br>
 
-## tomcat + web server 연동
+## 🔖 tomcat + web server 연동
 
 tomcat은 웹서버와 WAS 둘 다 포괄하지만 WAS로서 기능을 한다. (사실 WAS가 web server + container)  
 하지만 html과 같은 정적인 페이지를 로딩하는데 다른 웹서버보다 속도가 느리다.  
@@ -84,7 +84,7 @@ tomcat은 웹서버와 WAS 둘 다 포괄하지만 WAS로서 기능을 한다. (
 <br>
 
 
-### 참고
+### 🔖 참고
 
 - [웹서버와 WAS, 컨테이너 개념 설명 참고](http://melonicedlatte.com/web/2019/06/23/210300.html)
 

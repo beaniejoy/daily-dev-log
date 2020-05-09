@@ -8,7 +8,7 @@ IDE를 이용하면 위의 과정을 `ctrl` + `f11`로 한번에 가능(IDE를 �
 
 <br>
 
-## Annotation 기반 URL Mapping
+## 🔖 Annotation 기반 URL Mapping
 
 ```xml
 <servlet>
@@ -39,7 +39,7 @@ public class Hello extends HttpServlet{
 
 <br>
 
-## Servlet 입출력 형식 설정
+## 🔖 Servlet 입출력 형식 설정
 
 ```java
 out.println("안녕 Servlet!!<br>");
@@ -65,7 +65,7 @@ response.setContentType("text/html; charset=UTF-8");
 <br>
 
 
-## GET / POST 요청에 따른 처리
+## 🔖 GET / POST 요청에 따른 처리
 
 
 ### GET Request
@@ -123,7 +123,7 @@ request.setCharacterEncoding("UTF-8");
 
 <br>
 
-## 정리
+## 🔖 정리
 
 아래 코드를 기억하자.
 
