@@ -6,8 +6,7 @@
 
 ## 🏷️ Contents
 - [Lombok](https://github.com/hanbinleejoy/daily-dev-log/blob/master/spring/about_lombok.md)
-- REST API
-- JPA 
+- [Spring Data JPA](https://github.com/hanbinleejoy/daily-dev-log/blob/master/spring/jpa.md) 
 - [Thymeleaf](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring/thymeleaf)
 
 
