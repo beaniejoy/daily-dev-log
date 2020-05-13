@@ -14,6 +14,8 @@ Statement, Keywords & Reserved Words, Identifier, Comment
 var & const & let
 - 🔗[Hoisting](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/03_hoisting.md)
 - 🔗[Data-Type](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/04_data_type.md)
+- 🔗[Condition](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/05_condition.md)
+- 🔗[Loop](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/06_loop.md)
 
 #### Dev
 - 🔗[Ajax](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/ajax.md)
