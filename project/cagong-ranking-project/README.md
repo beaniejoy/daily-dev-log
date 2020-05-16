@@ -24,3 +24,6 @@
 - CafeNotFound, ScoreSetNotFound 등 Exception에 대한 handling 처리
 - 세련된 design 작업
 - contextPath를 이용한 href(url) 설정하기
+- Comment table 분리해 Youtube 댓글 작성 기능처럼 만들기
+  - Response, Repository, Service, Controller 완전 분리
+  - 현재는 Review의 comment 칼럼을 가지고 접근
