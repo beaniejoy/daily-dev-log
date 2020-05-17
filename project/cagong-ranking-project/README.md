@@ -17,13 +17,19 @@
 
 ## 🏷️ To Do List
 
-- login 처리: token 이용(JWT)
-- 회원 정보를 받아서 review 작성할 수 있게 처리
-- review작성과 동시에 score_set table에 점수 반영하기
-- controller refactoring을 통해 코드 정리하기
-- CafeNotFound, ScoreSetNotFound 등 Exception에 대한 handling 처리
-- 세련된 design 작업
-- contextPath를 이용한 href(url) 설정하기
-- Comment table 분리해 Youtube 댓글 작성 기능처럼 만들기
-  - Response, Repository, Service, Controller 완전 분리
-  - 현재는 Review의 comment 칼럼을 가지고 접근
+- **login**
+  - login 처리: token 이용(JWT)
+- **review**
+  - 회원 정보를 받아서 review 작성할 수 있게 처리
+  - Comment table 분리해 Youtube 댓글 작성 기능처럼 만들기
+    - Response, Repository, Service, Controller 완전 분리
+    - 현재는 Review의 comment 칼럼을 가지고 접근
+- **view**
+  - 댓글 0개 일때 처리하는 문제 해결할 것 
+  - 댓글리스트 height 댓글 개수에 따라 동적으로 변화하도록 만들 것
+- **etc.**
+  - controller refactoring을 통해 코드 정리하기
+  - CafeNotFound, ScoreSetNotFound 등 Exception에 대한 handling 처리
+  - 세련된 design 작업
+  - contextPath를 이용한 href(url) 설정하기
+  
