@@ -19,7 +19,7 @@
 
 - **login**
   - login 처리: token 이용(JWT)
-  - 로그인, 회원가입 페이지 통합
+  - submit 버튼, 입력 조건에 맞는 경우만 활성화되도록 수정
 - **review**
   - 회원 정보를 받아서 review 작성할 수 있게 처리
   - Comment table 분리해 Youtube 댓글 작성 기능처럼 만들기
