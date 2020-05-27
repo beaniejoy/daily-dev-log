@@ -37,7 +37,8 @@ public class Hello extends HttpServlet{
 ```
 `@WebServlet("/hello")` Annotation 하나만 설정하면 xml 설정을 하지 않아도 mapping이 가능하다.
 
-> xml설정보다 annotation 기반이 좋다. 여러 개발자들과 공동 프로젝트를 진행할 때 혼돈하지 않고 깔끔하게 작업할 수 있다.
+> xml설정보다 annotation 기반이 좋다.  
+> 여러 개발자들과 공동 프로젝트를 진행할 때 혼돈하지 않고 깔끔하게 작업할 수 있다.
 
 <br>
 
@@ -122,7 +123,8 @@ request.setCharacterEncoding("UTF-8");
 ```
 `conf/server.xml` 파일에 내용을 위와 같이 수정해주면 tomcat의 기본 인코딩 방식을 `UTF-8`로 바꿀 수 있다.  
 
-> 하지만 이렇게 서버 자체의 설정을 바꾸는 행위는 하지 않는다. 개발할 때 여러 가지 환경이 존재하기 때문에 서버 설정보다 위와 같이 코드로 구현한다.
+> 하지만 이렇게 서버 자체의 설정을 바꾸는 행위는 하지 않는다.  
+> 개발할 때 여러 가지 환경이 존재하기 때문에 서버 설정보다 위와 같이 코드로 구현한다.
 
 
 <br>
@@ -135,8 +137,6 @@ request.setCharacterEncoding("UTF-8");
 ```java
 @WebServlet("/hello")
 ```
-
-<br>
 
 ### Encoding 방식 설정
 ```java
