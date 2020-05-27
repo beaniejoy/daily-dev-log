@@ -10,6 +10,8 @@ IDE를 이용하면 위의 과정을 `ctrl` + `f11`로 한번에 가능(IDE를 �
 
 ## 🔖 Annotation 기반 URL Mapping
 
+#### `web.xml` 내용 수정하기
+
 ```xml
 <servlet>
     <servlet-name>na</servlet-name>
@@ -47,6 +49,7 @@ out.println("안녕 Servlet!!<br>");
 이렇게 브라우저에 내보냈다고 한다면 한글은 깨져서 나오고 `<br>` 태그는 인식이 안되는 경우가 있다.  
 크롬, 파이어폭스, IE 등등 여러 브라우저들이 있는데 각각 내보내는 형식이 다르다.  
   
+<br>
 
 Servlet은 기본 설정이 ISO-8859-1 인코딩 방식으로 내보내게 되는데 1byte씩 내보내는 방식이다. 그렇기 때문에 한글은 깨져서 나오게 되는 것이다.  
 이를 `UTF-8` 인코딩 방식으로 내보낸다는 것을 알려야 한다.  
@@ -118,7 +121,8 @@ request.setCharacterEncoding("UTF-8");
                URIEncoding="UTF-8"/>
 ```
 `conf/server.xml` 파일에 내용을 위와 같이 수정해주면 tomcat의 기본 인코딩 방식을 `UTF-8`로 바꿀 수 있다.  
-하지만 이렇게 서버 자체의 설정을 바꾸는 행위는 하지 않는다. 개발할 때 여러 가지 환경이 존재하기 때문에 서버 설정보다 위와 같이 코드로 구현한다.
+
+> 하지만 이렇게 서버 자체의 설정을 바꾸는 행위는 하지 않는다. 개발할 때 여러 가지 환경이 존재하기 때문에 서버 설정보다 위와 같이 코드로 구현한다.
 
 
 <br>
@@ -127,11 +131,19 @@ request.setCharacterEncoding("UTF-8");
 
 아래 코드를 기억하자.
 
+### Annotation방식으로 URL Mapping
 ```java
 @WebServlet("/hello")
+```
 
+<br>
+
+### Encoding 방식 설정
+```java
+// 내보낼 페이지와 브라우저의 Encoding 설정
 response.setCharacterEncoding("UTF-8");
 response.setContentType("text/html; charset=UTF-8");
 
+// Request 요청 Encoding 설정
 request.setCharacterEncoding("UTF-8");
 ```
