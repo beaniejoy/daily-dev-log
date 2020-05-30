@@ -8,10 +8,11 @@
 
 ## 🏷️ 주요 사항
 
-- [handlebars 기본 사용법 (200412)](https://github.com/hanbinleejoy/daily-dev-log/blob/master/project/cagong-ranking-project/200412_dev_log.md)
+- [handlebars 기본 사용법 (200412)](https://github.com/hanbinleejoy/daily-dev-log/blob/master/project/cagong-ranking-project/dev-log/200412_dev_log.md)
 - thymeleaf를 이용한 front 구성
   - [About thymeleaf](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring/thymeleaf)
-  - [Pagination 구성하기 (200425)](https://github.com/hanbinleejoy/daily-dev-log/blob/master/project/cagong-ranking-project/200425_dev_log.md)
+  - [Pagination 구성하기 (200425)](https://github.com/hanbinleejoy/daily-dev-log/blob/master/project/cagong-ranking-project/dev-log/200425_dev_log.md)
+  - [AWS 설정과 관련된 log](https://github.com/hanbinleejoy/daily-dev-log/blob/master/project/cagong-ranking-project/AWS_설정에_대한_정리.md)
 
 
 
