@@ -13,7 +13,7 @@ ex) 200401 [spring/spring-boot] REST API 정리 내용
 ## Dev Document
 개발 관련 정리 노트
 - 🔗[Java](https://github.com/hanbinleejoy/my-java-document)
-- 🔗[JavaScript](https://github.com/hanbinleejoy/daily-dev-log/tree/master/web/javascript)
+- 🔗[JavaScript](https://github.com/hanbinleejoy/daily-dev-log/tree/master/javascript)
 - 🔗[Spring](https://github.com/hanbinleejoy/daily-dev-log/tree/master/spring)
 - 🔗[Vue](https://github.com/hanbinleejoy/daily-dev-log/tree/master/vue)
 - 🔗[Servlet/JSP](https://github.com/hanbinleejoy/daily-dev-log/tree/master/servlet-jsp)
