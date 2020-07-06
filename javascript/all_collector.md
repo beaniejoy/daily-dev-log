@@ -9,6 +9,17 @@ location.href = url; // 해당 url주소로 이동시켜준다.
 ```
 
 
+```js
+window.alert("브라우저에서 알림창을 만들어 줍니다.");
+
+let value = window.prompt("1 ~ 100 사이의 정수를 입력하세요", 0);
+console.log(typeof(value)); // string
+let a = Number(value);
+let b = parseInt(value);
+console.log(typeof(a)); // number
+console.log(typeof(b)); // number
+```
+
 ## DOM select 관련
 ```javascript
 document.getElementById('id_name');

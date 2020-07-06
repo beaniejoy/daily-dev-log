@@ -1,6 +1,14 @@
 # Object
 
-함수, 클래스(틀) / 객체, 개체, object(instance라고도 부른다.)
+함수, 클래스(틀) / 객체, 개체, object(instance라고도 부른다.)  
+객체는 속성과 기능을 가지는 현실세계의 유형, 무형의 개체
+
+<br>
+
+객체 정의 방법
+1. 함수를 이용한 정의 방법(function name() {})
+2. JSON: 데이터 전송시 경량화된 객체로 정의할 수 있다.
+3. class: ECMAScript 6부터 
 
 <br>
 

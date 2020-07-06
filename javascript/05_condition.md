@@ -92,6 +92,20 @@ java와 같이 각 case문에 `break` 설정을 하지않으면 그 밑에 case�
 <br>
 
 ```js
+let b = 89 // 내 점수
+let grade;
+switch(true) {
+    case b >= 90: grade = 'A'; break;
+    case b >= 80: grade = 'B'; break;
+    case b >= 70: grade = 'C'; break;
+    case b >= 60: grade = 'D'; break;
+    default: grade = 'F';
+}
+```
+이런 식으로도 사용할 수 있다.
+<br>
+
+```js
 switch (numb2 % 5) {
     case 0: {
         console.log('5의 배수');

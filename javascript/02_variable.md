@@ -99,8 +99,19 @@ console.log(age); // 38
     // console.log(temp); 여기서는 에러
 }
 ```
-- 조건문과 반복문에서도 block scope가 적용된다.
-- **var의 function scope와 const, let의 block scope 차이 존재 (ES6부터는 block scope중시)**
+
+```js
+let a = 1;
+{
+    console.log(a); //error
+    let a = 2;
+}
+```
+- 여기서 에러가 발생하는 것은 같은 scope안에 a 변수를 선언 할당했기 때문이다.
+- let은 hoisting이 안되기 때문에 아예 존재하지 않는 변수가 되어버린다.
+
+> 조건문과 반복문에서도 block scope가 적용된다.  
+> **var의 function scope와 const, let의 block scope 차이 존재 (ES6부터는 block scope중시)**
 
 <br>
 

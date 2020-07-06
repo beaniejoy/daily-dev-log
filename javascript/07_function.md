@@ -1,5 +1,9 @@
 # function
 
+1. named function
+2. 익명 함수
+3. 화살표 함수(람다식)
+
 <br>
 
 ## 🔖 function 생성
@@ -199,6 +203,16 @@ const wow4 = name => {
 const wow4 = name => `wow4 ${name}`;
 ```
 
+### 즉시 실행 함수
+
+```js
+let result = (() => "화살표 함수")();
+console.log(result);
+
+(() => {console.log("화살표 함수2");})();
+```
+- `(함수 형태)();`: 바로 함수를 실행한 결과를 나타낸다.
+
 <br>
 
 ## 🔖 생성자 함수를 이용한 새로운 객체 만드는 방법
@@ -264,3 +278,55 @@ helloCall(function() {
 });
 ```
 - `hello callback` 출력
+
+<br>
+
+## 🔖 함수적 프로그래밍 특성
+
+- 함수를 변수에 저장
+- 함수의 인수로 함수를 전달 (화살표 함수를 함수의 인수로 전달하기 유용하다.)
+- (함수를 일급 객체로 취급하기 때문에) 함수 내부에 함수를 정의할 수 있다.
+- 함수에서 함수 정의를 반환할 수 있다.
+- 자바스크립트에서 모든 함수는 **가변 파라미터**를 가지는 함수다.
+
+```js
+function sumAll(a, b, c) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+sumAll(1, 2, 3); // 1 2 3
+sumAll(1, 2); // 1 2 undefined
+sumAll(1, 2, 3, 4); // 1 2 3
+
+console.dir(sumAll);
+```
+
+<br>
+
+```js
+function sum() {
+    console.log(arguments.length); // 0 (인자를 넣어주면 개수 만큼 결과값 도출)
+    let result = 0;
+    for (let numb of arguments) {
+        result += numb;
+    }
+    return result;
+}
+
+console.log(sum()); // 0
+console.log(sum(1, 2, 3, 4, 5)); // 15
+console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)); // 55
+```
+- javascript는 가변 파라미터를 가진다.
+
+<br>
+
+```js
+function createArray() {
+    // 인수가 없으면 빈 배열을 생성해서 return
+    // 인수가 하나면 초기 size의 배열을 생성해서 return
+    // 인수가 하나 이상이면 인수들을 배열의 요소로 저장해서 return
+}
+```

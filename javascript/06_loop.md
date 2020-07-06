@@ -69,7 +69,9 @@ while (true) {
 
 ## 🔖 `of`, `in`
 
-- for of: iterable한 객체에 사용 가능, iterable한 객체는 배열 등이 있다.
+- for of 
+  - iterable한 객체에 사용 가능, iterable한 객체는 배열 등이 있다.
+  - 배열 안에 요소들을 하나씩 꺼내 준다.
 - for in: 모든 프로퍼티에서 사용가능, 객체에서도 가능
 
 ```js
