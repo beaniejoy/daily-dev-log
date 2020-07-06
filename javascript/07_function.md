@@ -167,7 +167,7 @@ global.a = 0;
 
 <br>
 
-## 🔖 arrow function
+## 🔖 Arrow Function(화살표 함수)
 
 ```js
 () => {
@@ -265,12 +265,12 @@ console.log(plus7(10)); // 17
 
 <br>
 
-### 함수를 호출할 때 인자로 함수를 사용
+### 함수를 호출할 때 인자로 함수를 사용(callback 함수)
 
 ```js
-function helloCall(c) {
+function helloCall(callback) {
     console.log('hello');
-    c();
+    callback();
 }
 
 helloCall(function() {
@@ -329,4 +329,50 @@ function createArray() {
     // 인수가 하나면 초기 size의 배열을 생성해서 return
     // 인수가 하나 이상이면 인수들을 배열의 요소로 저장해서 return
 }
+```
+
+## 🔖 표준 내장 함수
+
+### parseInt(), parseFloat()
+
+```js
+let inputA = "52"
+let inputB = "52.153"
+let inputC = "1202등"
+
+console.log(parseInt(inputA));
+
+console.log(parseInt(inputB)); // 52
+console.log(parseFloat(inputB)); // 52.153
+
+console.log(parseInt(inputA)); // 1202
+```
+
+<br>
+
+### setTimeout(), setInterval(), clearInterval()
+
+```js
+// 1초 후에 실행
+setTimeout(function() {
+    console.log("1초가 지났습니다.");
+}, 1000);
+
+// 1초마다 실행
+setInterval(function() {
+    console.log("1초가 지났습니다.");
+}, 1000);
+```
+- `setInterval()`의 종료는 `ctrl + c`
+- 혹은 `clearInterval()` 사용해서 종료시킬 수 있다.
+
+```js
+let interval = setInterval(function() {
+    console.log("1초가 지났습니다.");
+}, 1000);
+
+setTimeout(function() {
+    // 타이머 제거
+    clearInterval(interval);
+}, 3000) // 3초 후에 해당 interval 실행을 종료
 ```
