@@ -1,6 +1,9 @@
 # SQL
 
-
+- DQL
+- DML
+- DDL
+- TCL
 
 ## 🔖 Join
 
