@@ -111,6 +111,28 @@ GROUP BY department_id
 HAVING MIN(salary) > 6000
 ORDER BY 2 DESC;
 ```
+- `WHERE`은 처음 조건 적용, `HAVING`은 grouping 이후에 조건
+- `ORDER BY`할 때 기준을 SELECT할 컬럼의 자리 숫자로 지정해도 된다.
+
+```sql
+SELECT deptno, job, avg(sal)
+FROM emp
+GROUP BY deptno, job;
+```
+- 이런 식으로 `GROUP BY` 기준을 한 개 이상으로 지정 가능
+
+> Q) 부서별 평균 급여중 최고 평균 급여를 검색
+
+```sql
+SELECT department_id, avg(salary) average
+FROM employees
+GROUP BY department_id
+HAVING avg(salary) = 
+(SELECT max(avg(salary))
+FROM employees
+GROUP BY department_id);
+```
+- 그룹함수 내부에 그룹함수 nested 가능
 
 <br>
 
@@ -158,6 +180,7 @@ FROM emp e CROSS JOIN dept d;
 <br>
 
 ### equi join
+
 ```sql
 SELECT e.empno, e.ename, e.deptno, d.dname
 FROM emp e, dept d
@@ -168,24 +191,103 @@ WHERE e.deptno = d.deptno;
 SELECT empno, ename, deptno, dname
 FROM emp NATURAL JOIN dept;
 ```
-- natural join은 조인할 테이블에서 이름이 동일한 컬럼에 대해서 자동으로 `equi join`을 수행
+- `natural join`은 조인할 테이블에서 이름이 동일한 컬럼에 대해서 자동으로 `equi join`을 수행
 - 여기서는 alias를 사용하면 오히려 안된다. 동일한 이름의 컬럼은 소유자 테이블명, alias를 생략한다.
+
+```sql
+SELECT e.empno, e.ename, deptno, d.dname
+FROM emp e JOIN dept d USING(deptno);
+```
+- 여러개 동일한 컬럼이 존재할 수 있기에 `using`절을 통해 하나의 pk - fk 쌍을 기준설정해줄 수 있다.
 
 <br>
 
-### 
+### PK - FK 쌍의 칼럼 이름이 다른 경우(모델링 잘못 설계)
+
+```SQL
+SELECT e.empno, e.ename, d.deptno, d.dname
+FROM t_emp e JOIN dept d ON e.deptid = d.deptno;
+```
+- 컬럼 이름이 다른 경우(FK(deptid) - PK(deptno))
+
+```SQL
+SELECT e.empno, e.ename, e.deptno, d.dname
+FROM emp e INNER JOIN dept d ON e.deptno = d.deptno;
+```
+- inner join 으로도 사용가능 하지만 join으로 보통 사용
+
+<br>
+
+### 느슨한 join
+
+```sql
+SELECT e.ename, e.sal, s.grade
+FROM emp e JOIN salgrade s
+ON e.sal BETWEEN s.losal AND s.hisal;
+```
+- join할 때 이렇게 다양한 조건식을 걸어줄 수 있다.
+- emp의 sal이 salgrade의 losal ~ hisal 어느 등급에 속하는지 조건 지정
+
+<br>
+
+### Self Join
+
+```sql
+SELECT e.empno, e.ename, e.mgr, m.ename AS mgrname
+FROM emp e, emp m
+WHERE e.mgr = m.empno;
+```
+- 하나의 테이블 안에서 자기 참조가 가능하다.
+
+<br>
+
+### Outer Join
+
+- **Left Outer Join**
+
+```sql
+SELECT e.empno, e.ename, e.deptno, d.dname
+FROM emp e, dept d
+WHERE e.deptno = d.deptno;
+```
+- 부서 없는 사원이 누락된다. (emp 테이블의 deptno없는 데이터)
+
+```sql
+SELECT e.empno, e.ename, e.deptno, d.dname
+FROM emp e, dept d
+WHERE e.deptno = d.deptno(+); -- outer 연산자 사용
+
+SELECT e.empno, e.ename, e.deptno, d.dname
+FROM emp e LEFT OUTER JOIN dept d ON e.deptno = d.deptno;
+```
+- outer 연산자 사용은 비추천, join 조건 외에 다른 필터조건에 `(+)` 연산자를 넣지 않으면 equi join으로 수행된다.
+- `LEFT OUTER JOIN`으로 작동하는 것이 좋다.
+
+- **Right Outer Join**
+
+```sql
+SELECT d.deptno, d.dname, e.empno, e.ename
+FROM emp e, dept d
+WHERE e.deptno(+) = d.deptno
+ORDER BY d.deptno;
+
+SELECT d.deptno, d.dname, e.empno, e.ename
+FROM emp e RIGHT OUTER JOIN dept d ON e.deptno = d.deptno
+ORDER BY d.deptno;
+```
+
 
 <br>
 
 ## 🔖 SubQuery
 
 ```sql
-select    (subquery)
-from      (subquery)
-[where]    (subquery)
-[group by]  
-[having]    (subquery)
-[order by]  (subquery)
+SELECT    (subquery)
+FROM      (subquery)
+[WHERE]    (subquery)
+[GROUP BY]  
+[HAVING]    (subquery)
+[ORDER BY]  (subquery)
 ```
 
 ## 🔖 Window Function
