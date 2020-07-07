@@ -1,7 +1,7 @@
 # 두서 없이 기록하는 Javascript method
 
 
-```javascript
+```js
 window.location.href; // 현재 url 주소값을 return해준다.
 
 var url = "[url 주소]";
@@ -21,10 +21,16 @@ console.log(typeof(b)); // number
 ```
 
 ## DOM select 관련
+
 ```javascript
-document.getElementById('id_name');
-document.getElementByClassName('class_name');
+document.getElementById('id_name'); // Node 하나
+document.getElementsByClassName('class_name'); // Node List로 반환
+
+//HTML5
+document.querySelector('CSS의 selector');
+document.querySelectorAll('CSS의 selector'); // NodeList 형태로 가져온다.
 ```
+- `jQuery`를 사용하면 element 선택하는 코드가 짧아진다.
 
 
 ```javascript
@@ -36,10 +42,4 @@ element.setAttribute('class', 'bg-dark'); // class에 bg-dark 추가하기
 
 
 element.removeAttribute('id'); // id 값 삭제
-```
-
-
-
-```javascript
-
 ```

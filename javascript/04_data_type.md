@@ -66,6 +66,7 @@ console.log(b, typeof b); // [Boolean: false] object
 - `0`: false
 - `0외 숫자`: true
 - `Boolean()` 처럼 boolean값을 생성하면 primitive 성격을 가지게 된다.
+
 <br>
 
 ### ▶ Null
@@ -74,7 +75,8 @@ console.log(b, typeof b); // [Boolean: false] object
 const a1 = null;
 console.log(a1, typeof a1); // null object
 ```
-`null`은 `object`임을 알 수 있다.
+- `null`은 `object`임을 알 수 있다.
+- `아예 값이 없는 상태`를 구분할 때 `null`을 사용
 
 <br>
 

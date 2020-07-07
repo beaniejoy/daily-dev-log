@@ -1,12 +1,13 @@
 # Object
 
-함수, 클래스(틀) / 객체, 개체, object(instance라고도 부른다.)  
-객체는 속성과 기능을 가지는 현실세계의 유형, 무형의 개체
+> 함수, 클래스(틀) / 객체, 개체, object(instance라고도 부른다.)  
+> 객체는 속성과 기능을 가지는 현실세계의 유형, 무형의 개체  
+> 데이터를 부를 때 배열은 요소, 객체는 속성이라 부른다.
 
 <br>
 
-객체 정의 방법
-1. 함수를 이용한 정의 방법(function name() {})
+### 객체 정의 방법
+1. 함수를 이용한 정의 방법(function Name() {})
 2. JSON: 데이터 전송시 경량화된 객체로 정의할 수 있다.
 3. class: ECMAScript 6부터 
 
@@ -157,6 +158,12 @@ console.log(p instanceof Object); // true
 
 ## 🔖 prototype을 이용한 객체 확장
 
+
+
+<br>
+
+## 🔖 prototype을 이용한 객체 확장
+
 > java의 상속과 비슷하다.
 
 ```js
@@ -207,3 +214,10 @@ const objLiteral2 = {
 
 console.log(objLiteral2, typeof objLiteral2); // { name: 'Beanie' } object
 ```
+
+<br>
+
+## 🔖 내장 객체
+
+내장 객체 중 최상위 객체는 Object
+
