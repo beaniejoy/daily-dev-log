@@ -158,6 +158,14 @@ FROM employees;
 - emp: 자식(deptno: fk)
 - dept ---<- emp (1: N)
 
+### Join의 종류
+
+- equi join(inner join): PK - FK를 사용한 조인조건 선언
+- not equi join
+- self join(자기 참조관계 테이블): PK, FK가 하나의 테이블에 같이 존재, 자기를 참조
+- outer join: left, right, full
+- cartesian product(cross join)
+
 <br>
 
 ### cartesian product
@@ -243,7 +251,9 @@ WHERE e.mgr = m.empno;
 
 ### Outer Join
 
-- **Left Outer Join**
+<br>
+
+#### Left Outer Join
 
 ```sql
 SELECT e.empno, e.ename, e.deptno, d.dname
@@ -263,7 +273,9 @@ FROM emp e LEFT OUTER JOIN dept d ON e.deptno = d.deptno;
 - outer 연산자 사용은 비추천, join 조건 외에 다른 필터조건에 `(+)` 연산자를 넣지 않으면 equi join으로 수행된다.
 - `LEFT OUTER JOIN`으로 작동하는 것이 좋다.
 
-- **Right Outer Join**
+<br>
+
+#### Right Outer Join
 
 ```sql
 SELECT d.deptno, d.dname, e.empno, e.ename
@@ -276,6 +288,165 @@ FROM emp e RIGHT OUTER JOIN dept d ON e.deptno = d.deptno
 ORDER BY d.deptno;
 ```
 
+<br>
+
+#### Full Outer Join
+
+```sql
+SELECT d.deptno, d.dname, e.empno, e.ename
+FROM emp e, dept d
+WHERE e.deptno(+) = d.deptno(+)
+ORDER BY d.deptno; -- ERROR
+```
+- outer 연산자를 통해 full outer join을 구현하려고 하면 ERROR 발생한다.
+
+```sql
+SELECT d.deptno, d.dname, e.empno, e.ename
+FROM emp e FULL OUTER JOIN dept d ON e.deptno = d.deptno
+ORDER BY d.deptno;
+```
+
+<br>
+
+## 🔖 집합 연산자
+
+`UNION`, `UNION ALL`, `INTERSECT`, `MINUS`
+
+```sql
+SELECT to_number(null), to_char(null), AVG(sal)
+FROM emp
+UNION ALL
+SELECT deptno, to_char(null), AVG(sal)
+FROM emp
+group by deptno
+UNION ALL
+SELECT deptno, job, AVG(sal)
+FROM emp
+GROUP BY deptno ,job;
+```
+- UNION으로 연결되는 결과물들의 칼럼개수와 data type이 동일해야 한다.
+- 여러번 full scan한다는 점에서 상황에 따라 사용해야 함
+
+<br>
+
+### UNION ALL
+
+```sql
+select employee_id, job_id, department_id
+from employees
+union all
+select employee_id, job_id, department_id
+from job_history; --append
+```
+- 중복된 값이 있어도 append해서 결과를 보여준다.
+
+<br>
+
+### UNION
+
+```sql
+select employee_id, job_id, department_id
+from employees
+union
+select employee_id, job_id, department_id
+from job_history;
+```
+- 중복된 값은 한번만 표기
+
+<br>
+
+### MINUS
+
+```sql
+select employee_id, job_id, department_id
+from employees
+MINUS
+select employee_id, job_id, department_id
+from job_history;
+```
+- 차집합이라 생각하면 된다.
+
+<br>
+
+### INTERSECT
+
+```sql
+select employee_id, job_id, department_id
+from employees
+intersect
+select employee_id, job_id, department_id
+from job_history;
+```
+- 일종의 교집합
+
+<br>
+
+### ROLLUP
+
+```sql
+SELECT deptno, job, avg(sal)
+FROM emp
+GROUP BY ROLLUP(deptno, job);
+```
+- 여러 번 full scan하는 것을 방지하고자 새로운 문법 제시
+- 오른쪽부터 지우면서 조합을 만들어 간다.
+> group by rollup(a, b)  
+> - group by a, b  
+> - group by a  
+> - group by ()
+
+<br>
+
+### CUBE
+
+```sql
+SELECT to_number(null), to_char(null), AVG(sal)
+FROM emp
+UNION ALL
+SELECT deptno, to_char(null), AVG(sal)
+FROM emp
+GROUP BY deptno
+UNION ALL
+SELECT to_number(null), job, AVG(sal)
+FROM emp
+GROUP BY job
+UNION ALL
+SELECT deptno, job, AVG(sal)
+FROM emp
+GROUP BY deptno ,job;
+```
+- 이것도 다음과 같이 CUDE 함수로 간단하게 줄일 수 있다.
+
+```sql
+select deptno, job, avg(sal)
+from emp
+group by cube(deptno, job);
+```
+- 모든 경우의 수를 다 따진다고 생각하면 된다.
+> group by a, b, c
+> - group by a, b
+> - group by b, c
+> - group by a, c
+> - group by a
+> - group by b
+> - group by c
+> - group by ()
+
+**주의사항**
+- order by 절은 마지막 select문에서만 사용 가능하다.
+- 각 select문에서 선언하는 컬럼개수와 타입 일치해야 한다.
+
+<br>
+
+### GROUPING SETS
+
+Q) 관리자별 급여 평균과 부서와 직무별 급여 평균과 전체 평균을 단일 결과로
+```sql
+select * from emp;
+select deptno, job, mgr, avg(sal)
+from emp
+group by grouping sets((mgr), (deptno, job), ());
+```
 
 <br>
 
@@ -289,8 +460,5 @@ FROM      (subquery)
 [HAVING]    (subquery)
 [ORDER BY]  (subquery)
 ```
-
-## 🔖 Window Function
-
 
 
