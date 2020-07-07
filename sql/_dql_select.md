@@ -49,39 +49,6 @@ WHERE department_id IN(10, 20, 50);
 ```
 - 별로 추천하지는 않는다. (full scan 낭비)
 
-### DECODE, CASE
-
-> Q) 전체 사원수, 1995, 1996, 1997, 1998년도에 입사한 사원수를 출력하시오
-```sql
-SELECT COUNT(employee_id) total,
-COUNT(decode(to_char(hire_date, 'YYYY'),'1995',1)) "1995",
-COUNT(decode(to_char(hire_date, 'YYYY'),'1996',1)) "1996",
-COUNT(decode(to_char(hire_date, 'YYYY'),'1997',1)) "1997",
-COUNT(decode(to_char(hire_date, 'YYYY'),'1998',1)) "1998"
-FROM employees;
-```
-
-> Q) 직무별로 월급의 합계와 각 부서내에 직무별 월급의 합계를 아래 보기와 같이 출력하시오
-
-```sql
-SELECT job_id, 
-SUM(decode(department_id, 20, salary, 0)) Dept20,
-SUM(decode(department_id, 50, salary, 0)) Dept50,
-SUM(decode(department_id, 80, salary, 0)) Dept80,
-SUM(decode(department_id, 90, salary, 0)) Dept90,
-SUM(salary) total
-FROM employees
-GROUP BY job_id;
-```
-
-```sql
-
-```
-
-```sql
-
-```
-
 <br>
 
 ## 🔖 그룹 함수(다중행 함수)
@@ -136,7 +103,15 @@ GROUP BY department_id);
 
 <br>
 
-## 🔖 내장 함수
+## 🔖 오라클 함수
+
+- UPPER/LOWER/INITCAP
+- LENGTH/SUBSTR/INSTR/REPLACE/LPAD/RPAD/TRIM
+- ROUND/TRUNC/CEIL/FLOOR/MOD
+- ADD_MONTHS/MONTHS_BETWEEN/NEXT_DAY/LAST_DAY
+- TO_CHAR/TO_DATE/TO_NUMBER
+- NVL/NVL2
+- DECODE/CASE
 
 ```sql
 SELECT SYSDATE FROM dual;
@@ -148,6 +123,33 @@ FROM dual;
 
 SELECT SYSDATE - hire_date
 FROM employees;
+```
+
+<br>
+
+### DECODE, CASE
+
+> Q) 전체 사원수, 1995, 1996, 1997, 1998년도에 입사한 사원수를 출력하시오
+```sql
+SELECT COUNT(employee_id) total,
+COUNT(decode(to_char(hire_date, 'YYYY'),'1995',1)) "1995",
+COUNT(decode(to_char(hire_date, 'YYYY'),'1996',1)) "1996",
+COUNT(decode(to_char(hire_date, 'YYYY'),'1997',1)) "1997",
+COUNT(decode(to_char(hire_date, 'YYYY'),'1998',1)) "1998"
+FROM employees;
+```
+
+> Q) 직무별로 월급의 합계와 각 부서내에 직무별 월급의 합계를 아래 보기와 같이 출력하시오
+
+```sql
+SELECT job_id, 
+SUM(decode(department_id, 20, salary, 0)) Dept20,
+SUM(decode(department_id, 50, salary, 0)) Dept50,
+SUM(decode(department_id, 80, salary, 0)) Dept80,
+SUM(decode(department_id, 90, salary, 0)) Dept90,
+SUM(salary) total
+FROM employees
+GROUP BY job_id;
 ```
 
 <br>
@@ -449,16 +451,5 @@ group by grouping sets((mgr), (deptno, job), ());
 ```
 
 <br>
-
-## 🔖 SubQuery
-
-```sql
-SELECT    (subquery)
-FROM      (subquery)
-[WHERE]    (subquery)
-[GROUP BY]  
-[HAVING]    (subquery)
-[ORDER BY]  (subquery)
-```
 
 
