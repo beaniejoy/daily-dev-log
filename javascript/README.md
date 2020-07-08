@@ -20,5 +20,6 @@ var & const & let
 - 🔗[Object](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/08_object.md)
 
 #### Dev
-- 🔗[Ajax](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/ajax.md)
-- 🔗[Method-Collector](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/all_collector.md)
+- 🔗[Ajax](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/_ajax.md)
+- 🔗[Method-Collector](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/_all_collector.md)
+- 🔗[jQuery](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/_jquery.md)

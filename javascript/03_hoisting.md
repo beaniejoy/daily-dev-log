@@ -41,3 +41,9 @@ let name = 'joy'; // 여기서 joy 할당
 ```
 - 여기서 알 수 있는 건 `var name`이라는 선언부만 위로 올라간다는 것이다.
 - let은  에러 발생: hoisting 적용이 안된다고 할 수 있다.
+
+<br>
+
+## 🔖 참고
+
+[hoisting link](https://developer.mozilla.org/ko/docs/Glossary/Hoisting)
