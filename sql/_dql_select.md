@@ -42,6 +42,7 @@ FROM employees;
 ```
 
 ### IN
+
 ```sql
 SELECT * 
 FROM departments
