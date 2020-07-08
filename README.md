@@ -29,8 +29,9 @@ ex) 200401 [spring/spring-boot] REST API 정리 내용
 
 ## To Do List
 - SQL
-  - subquery, dql 부분 수정 작성하기
-  - window function 작성
+  - subquery: 업데이트 내용 2곳 작성하기
+  - dql: 전체적인 update
+  - window function 작성하기
 - javascript
   - jQuery 부분 작성
   - 전체적인 내용 정리하기
