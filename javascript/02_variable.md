@@ -1,7 +1,7 @@
+# All about variable
 
 
 ## 🔖 Variable
-
 
 ### ▶ var
 - var의 유효 범위: **함수 scope**
