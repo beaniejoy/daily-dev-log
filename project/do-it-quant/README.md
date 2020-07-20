@@ -4,6 +4,7 @@
 > - Spring Boot
 > - Gradle
 > - Eclipse
+> - python(crawling)
 > - React-Native(+ Android Mobile)
 
 ## 🏷️ 주요 사항
