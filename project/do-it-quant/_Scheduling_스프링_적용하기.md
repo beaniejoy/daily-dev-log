@@ -35,6 +35,7 @@ linux OS에서 `crontab`을 통해 scheduling을 설정할 수 있다.
 ```cmd
 $crontab -e (scheduling할 명령어 설정, vim형식)
 
+
 $crontab -l (scheduling했던 설정 내용들 확인)
 ```
 
@@ -47,3 +48,8 @@ jongmok_code = ExcelRead("/home/ec2-user/app/diq/data/sangjang_jongmokCode.xlsx"
 ```
 - `./data`로 설정하면 해당 디렉토리에서 python 명령을 통한 실행은 가능하지만 crontab상에서는 인식을 못한다.
 - 절대경로로 설정해주어야 한다.
+
+<br>
+
+#### crontab 관련 참고 블로그
+[리눅스 반복 예약 작업](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_%EB%B0%98%EB%B3%B5_%EC%98%88%EC%95%BD%EC%9E%91%EC%97%85_cron,_crond,_crontab)
