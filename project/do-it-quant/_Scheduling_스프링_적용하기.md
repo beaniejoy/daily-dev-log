@@ -37,6 +37,9 @@ $crontab -e (scheduling할 명령어 설정, vim형식)
 
 
 $crontab -l (scheduling했던 설정 내용들 확인)
+
+35 11 30 7 * python3 /home/ec2-user/app/diq/web_crawling_logo.py
+20 12 30 7 * aws s3 sync /home/ec2-user/app/diq/data/logo/ s3://webservice-image-bucket/do-it-quant --acl public-read
 ```
 
 여기서 유의할 것은 `crontab -e` 명령어를 통해 설정하는 내용 중 directory path 설정하는 부분이다.  
