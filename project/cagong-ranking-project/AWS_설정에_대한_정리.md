@@ -10,6 +10,8 @@ AWS Cloud Server 연동하면서 모식도 정리
 
 ## 🔖 전체적인 AWS 관계도
 
+
+
 ```
-IntelliJ(Commit/Push) - Github - Travis CI - S3(jar file upload) - CodeDeploy(배포 요청) - EC2(RDS)
+IntelliJ(Commit/Push) - Github - Travis CI(build) - S3(jar file upload) - CodeDeploy(배포 요청) - EC2(RDS)
 ```
