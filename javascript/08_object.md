@@ -172,12 +172,6 @@ console.log(p instanceof Object); // true
 
 ## 🔖 prototype을 이용한 객체 확장
 
-
-
-<br>
-
-## 🔖 prototype을 이용한 객체 확장
-
 > java의 상속과 비슷하다.
 
 ```js
