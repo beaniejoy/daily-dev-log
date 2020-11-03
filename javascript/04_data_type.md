@@ -159,13 +159,88 @@ console.log(sym3 === sym4); // false
 
 <br>
 
-## 🔖 배열
+## 🔖 배열(Array)
 
 ```js
 let a = ['10', 10.5, false]
 ```
 - 배열 정의: size 가변적, 데이터 요소의 타입이 동일하지 않아도 된다.
 - `object` type으로 취급
+
+<br>
+
+### Stack 개념의 Array객체
+
+```js
+var nums = new Array();
+
+nums.push(5);
+var n1 = nums.pop();
+
+nums.push(10);
+var n1 = nums.pop();
+
+nums.push(21);
+var n1 = nums.pop();
+```
+stack 처럼 pop, push로 관리
+
+### list 개념의 Array객체
+
+```js
+var nums = new Array();
+
+nums[0] = 5;
+alert(nums[0]);
+
+nums[1] = 10;
+alert(nums[1]);
+
+nums[2] = 15;
+alert(nums[2]);
+```
+index로 접근 가능
+
+```js
+var nums = new Array();
+
+nums[2] = 15; // [empty x 2, 15] 이런식으로 나온다.
+alert(nums);
+
+alert(nums.length); // 3
+```
+중간에 값이 빠져있어도 empty값으로 들어간다.
+
+### 배열 객체 초기화
+
+```js
+var nums = new Array();
+var nums = new Array(5);
+var nums = new Array(5, 10, 15);
+var nums = new Array(5, 10, 15, "hello");
+var nums = new Array(5, 10, 15, new Array(2, "hello", 3));
+```
+초기화에는 여러가지 방법이 존재
+
+### slice 문법
+
+```js
+var nums = new Array(5, 10, 15, "hello");
+nums.splice(2);
+console.log(nums); // [5, 10]
+
+var nums = new Array(5, 10, 15, "hello");
+nums.splice(2, 1);
+console.log(nums); // [5, 10, "hello"]
+
+var nums = new Array(5, 10, 15, "hello");
+nums.splice(2, 1, "good");
+console.log(nums); // [5, 10, "good", "hello"]
+
+var nums = new Array(5, 10, 15, "hello");
+nums.splice(2, 0, "good"); // 중간에 삽입도 가능하다.
+console.log(nums); // [5, 10, "good", 15, "hello"]
+```
 
 <br>
 
