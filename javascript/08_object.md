@@ -11,12 +11,26 @@
 2. JSON: 데이터 전송시 경량화된 객체로 정의할 수 있다.
 3. class: ECMAScript 6부터 
 
+### JS의 객체지향 특징
+
+- C++, C#, java > class: 정적인 객체정의, class먼저 정의 후 객체 생성)
+- js >**prototype, class**: 동적인 객체정의, 객체를 먼저 생성 가능
+
+```js
+var exam = new Object();
+exam.kor = 30;
+exam.eng = 70;
+exam.math = 80;
+```
+Expand Object
+
+
 <br>
 
 ## 🔖 생성자 함수로 객체 만들기
 
 ```js
-function ObjectName() {} => new ObjectName();
+function ObjectName() {} // new ObjectName();
 ```
 
 <br>
@@ -221,3 +235,20 @@ console.log(objLiteral2, typeof objLiteral2); // { name: 'Beanie' } object
 
 내장 객체 중 최상위 객체는 Object
 
+<br>
+
+## 🔖 JSON과 javascript Object
+
+```js
+var n = new Boolean(true); // Boolean
+var n = new Number(10); // Number
+var n = new String("hello"); // String
+var n = new Array(); // Array
+var n = new Object(); // Object
+
+var n = true; // Boolean
+var n = 10; // Number
+var n = "hello"; // String
+var n = []; // Array
+var n = {}; // Object
+```
