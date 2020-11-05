@@ -20,7 +20,9 @@ console.log(typeof(a)); // number
 console.log(typeof(b)); // number
 ```
 
-## DOM select 관련
+<br>
+
+## 🔖 DOM select 관련
 
 ```javascript
 document.getElementById('id_name'); // Node 하나
@@ -43,3 +45,16 @@ element.setAttribute('class', 'bg-dark'); // class에 bg-dark 추가하기
 
 element.removeAttribute('id'); // id 값 삭제
 ```
+
+<br>
+
+## 🔖 `event.preventDefault()`, `event.stopPropagation()`
+
+```js
+// 태그객체 고유의 이벤트를 제한
+event.preventDefault();
+// 상위 엘리먼트에 이벤트 전파 제한
+event.stopPropagation();
+```
+
+- [e.preventDefault() 와 stopPropagation() 의 차이](https://pa-pico.tistory.com/20)
