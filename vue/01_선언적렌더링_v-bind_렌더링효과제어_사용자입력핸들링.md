@@ -65,7 +65,7 @@ var app2 = new Vue({
 
 ```html
 <div id="app">
-  <div class="text" v-bind:class="{'acitve': active}">
+  <div class="text" v-bind:class="{'active': active}">
     {{message}}
   </div>
 </div>
