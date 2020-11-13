@@ -227,3 +227,90 @@ console.log(StaticEx3);
 <br>
 
 ## 🔖 상속(extends)
+
+```js
+class Parent {
+    name = 'Lee';
+
+    hello() {
+        console.log('hello', this.name);
+    };
+}
+
+class Child extends Parent {}
+
+const p = new Parent();
+const c = new Child();
+console.log(p, c); // Parent { name: 'Lee' } Child { name: 'Lee' }
+
+// 상속을 받은 메서드와 맴버변수 둘다 사용 가능
+c.hello(); // hello Lee
+c.name = 'Joy';
+c.hello(); // hello Joy 
+```
+
+### 변수, 함수 추가 및 Overriding
+```js
+class Parent {
+  name = 'Lee';
+
+  hello() {
+    console.log('hello', this.name);
+  }
+}
+
+class Child extends Parent {
+  age = 30;
+  // function overriding
+  hello() {
+    console.log('hello', this.name, this.age);
+  }
+}
+
+const p = new Parent();
+const c = new Child();
+```
+
+### Super
+```js
+class Parent {
+  name;
+
+  constructor(name) {
+    this.name = name;
+  }
+
+  hello() {
+    console.log('hello', this.name);
+  }
+}
+
+class Child extends Parent {
+  age;
+
+  constructor(name, age) {
+    super(name);
+    this.age = age;
+  }
+
+  hello() {
+    console.log('hello'. this.name, this.age);
+  }
+}
+
+const p = new Parent('Mark');
+const c = new Child('Beanie', 30);
+console.log(p, c);
+// Parent { name: 'Mark' } Child { name: 'Beanie', age: 30 }
+```
+
+### static 상속
+```js
+class Parent {
+  static age = 20;
+}
+
+class Child extends Parent {}
+
+console.log(Parent.age, Child.age); // static도 상속받는다. (class로)
+```
