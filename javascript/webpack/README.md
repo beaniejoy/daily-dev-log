@@ -6,6 +6,10 @@
 
 <br>
 
+- [webpack doc](https://webpack.js.org/concepts/)
+
+<br>
+
 ## 🏷️ Contents
 
 ```
@@ -18,4 +22,36 @@ Webpack
 ├── src                 > source 파일
     ├── index.js        > entry 시작 js파일
     └── index.css       > css 파일
+```
+
+<br>
+
+## 🏷️ 필기사항
+
+### bundling
+```
+$ npm run dev       > 'dev mode'
+$ npm run build     > 'prod mode'
+```
+
+### dev server run
+
+```
+$ npm start
+```
+```
+> SET NODE_ENV=DEVELOPMENT&&webpack serve --config webpack.dev.js
+```
+`webpack-dev-server` > `webpack serve` (change command)
+
+### Windows based Command
+```cmd
+> SET NODE_ENV=DEVELOPMENT&&webpack --config webpack.dev.js
+> SET NODE_ENV=PRODUCTION&&webpack --config webpack.prod.js
+```
+
+### Linux based Command
+```
+$ NODE_ENV=DEVELOPMENT webpack --config webpack.dev.js
+$ NODE_ENV=PRODUCTION webpack --config webpack.prod.js
 ```
