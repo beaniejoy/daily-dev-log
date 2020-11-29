@@ -16,16 +16,19 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 ```
 
-
+<br>
 
 ## 🏷️ Contents
-- [선언적 렌더링]() : `v-bind`, `v-if`, `v-for`, `v-on`, `v-model`  
-- [Component 사용법]()
+- 선언적 렌더링
+- 바인딩(`v-bind`)
+- 조건, 반복 구문 사용
+- 사용자 입력 핸들링
+- Component 사용법
 
+<br>
 
-## 참고
+## Reference
 
-[vuepress로 기술문서 작성하기](https://limdongjin.github.io/vuejs/vuepress/#table-of-contents)
-
-
-
+- [vuepress로 기술문서 작성하기](https://limdongjin.github.io/vuejs/vuepress/#table-of-contents)
+- [Codepen](https://codepen.io/)
+- [Vue todo list project 예시](https://github.com/hanbinleejoy/vue-todolist-app)

@@ -1,14 +1,13 @@
-
-## 🔖 **1. 컴퍼넌트를 사용한 작성방법**
+# 컴퍼넌트를 사용한 작성방법
 
 - 컴퍼넌트는 부분의 개념, 부분을 사용/재사용 할 때 컴퍼넌트 개념을 사용
 - 우리가 사용하는 대부분의 웹사이트들은 컴퍼넌트 구조로 되어있다.
-- 예를 들어 각 웹사이트에 들어가는 header 정보들, 그리고 그 안에 들어가는 logo, dropdown menu, search bar도 전부 Component라 할 수 있다.
+- 예를 들어 각 웹사이트에 들어가는 header 정보들,   
+  그리고 그 안에 들어가는 logo, dropdown menu, search bar도 전부 Component라 할 수 있다.
 - Component들은 중복이되는 것들도 존재한다. (예를 들어 dropdown menu에서 글자만 다르고 형식과 디자인은 전부 같다.)
 - **이러한 중복되는 Component를 template형태로 관리해서 사용하고자 할 때 그 때 그 때 불러내기만 한다면 편리할 것이다.**
 - 이를 Vue에서 관리해준다.
-- [해당링크](https://kr.vuejs.org/v2/guide/index.html#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EC%9E%91%EC%84%B1%EB%B0%A9%EB%B2%95)
-
+- [Vue Doc - 컴퍼넌트를 사용한 작성방법](https://kr.vuejs.org/v2/guide/index.html#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EC%9E%91%EC%84%B1%EB%B0%A9%EB%B2%95)
 
 ```html
 <div id="app-7">
@@ -58,11 +57,11 @@ var app7 = new Vue({
 ```
 - 부모 앱에 영향을 주지 않고 관리 가능
 - 분리가 되어서 관리가 용이해진다. 체계적으로 통제가 가능해진다.
-- 가독성이 높아진다. (component는 `-`으로 구분해준다.)
+- 가독성이 높아진다. (**component는 `-`으로 구분해준다.**)
 
 <br>
 
-- **Before using Component**
+##  Before using Component
 ```html
 ...
 <style>
@@ -106,8 +105,9 @@ const vm = new Vue({
   }
 });
 ```
+<br>
 
-- **Component used**
+## Component used
 ```html
 <div id="app">
   <ul>
