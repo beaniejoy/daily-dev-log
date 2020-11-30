@@ -1,6 +1,10 @@
 # tomcat 실행하기
 
-[apache tomcat 9버전 다운](https://tomcat.apache.org/download-90.cgi)
+- `tomcat`: Apache & Sun microsystems 공동 프로젝트에 의해 만들어진 JSP/Servlet Container
+- `Web Server`: 정적인 페이지를 제공해주는 서버
+- `JSP/Sevlet Container`: JSP가 동작할 수 있도록 하는 서버(동적 페이지 제공을 위해)
+- tomcat에는 웹 서버 기능이 내장되어 있다. (단일 프로젝트인 경우 tomcat 하나만으로 웹 어플리케이션 만들어도 무방)
+- [apache tomcat 9버전 다운](https://tomcat.apache.org/download-90.cgi)
 
 ```
 - bin
