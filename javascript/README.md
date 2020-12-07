@@ -20,9 +20,10 @@ var & const & let
 - 🔗[Object](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/08_object.md)
 - 🔗[class](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/09_class.md)
 - 🔗[async intro](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/10_async_intro.md)
-- 🔗[Promise](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/10_promise.md)
+- 🔗[Promise](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/11_promise.md)
+- 🔗[async, await](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/12_async_await.md)
 
-### ETC
+### etc..
 
 - 🔗[Ajax](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/_ajax.md)
 - 🔗[Method-Collector](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/_all_collector.md)

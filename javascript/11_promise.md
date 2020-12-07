@@ -264,3 +264,54 @@ Promise.reject(new Error("reason"))
   });
 ```
 `Promise.reject` 를 사용하면, `catch`로 연결된 rejected상태로 변경
+
+<br>
+
+## 🔖 복수의 Promise 객체 처리
+
+### `Promise.all`
+
+```js
+Promise.all([프로미스 객체들]);
+```
+- 배열의 **모든 프로미스 객체들이 fulfilled** 되었을 때 `then` 함수 실행.
+- `then`의 함수 인자로 프로미스 객체들의 `resolve` 인자값을 **배열**(`Array`)로 돌려준다.
+
+
+```js
+function pAll(ms) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(ms);
+    }, ms);
+  });
+}
+
+Promise.all([pAll(3000), pAll(4000), pAll(5000)]).then((messages) => {
+  console.log("모두 fulfilled된 이후에 실행됩니다.", messages);
+}); 
+// [ 3000, 4000, 5000 ]
+```
+
+### `Promise.race`
+
+```js
+Promise.race([프로미스 객체들]);
+```
+- 배열의 모든 프로미스 객체들 중 **가장 먼저 fulfilled** 된 것으로 `then`함수가 실행
+- `then` 함수의 인자로 가장 먼저 fulfilled 된 프로미스 객체의 `resolve` 인자값을 돌려준다.
+
+```js
+function pRace(ms) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(ms);
+    }, ms);
+  });
+}
+
+Promise.race([pRace(3000), pRace(4000), pRace(5000)]).then((message) => {
+  console.log("가장 빠른 하나가 fulfilled된 이후에 실행됩니다.", message);
+});
+// 3000
+```
