@@ -55,3 +55,53 @@ $ npm start
 $ NODE_ENV=DEVELOPMENT webpack --config webpack.dev.js
 $ NODE_ENV=PRODUCTION webpack --config webpack.prod.js
 ```
+
+<br>
+
+## 🏷️ Issues
+
+### webpack5 auto polyfill 제거
+- [webpack5 무엇이 달라졌나](https://so-so.dev/webpack/whats-different-in-webpack5/)
+- [How to setup polyfill in webpack5](https://sanchit3b.medium.com/how-to-polyfill-node-core-modules-in-webpack-5-905c1f5504a0)
+
+webpack5에서는 더이상 `@babel/polyfill`을 `webpack.config.js`에 설정할 필요가 없다.
+
+```
+$ npm i 
+    assert 
+    buffer 
+    console-browserify 
+    constants-browserify 
+    domain-browser 
+    events 
+    stream-http 
+    https-browserify 
+    os-browserify 
+    path-browserify
+    punycode 
+    process 
+    querystring-es3 
+    stream-browserify 
+    readable-stream 
+    string_decoder util 
+    timers-browserify 
+    tty-browserify 
+    url 
+    vm-browserify 
+    browserify-zlib
+```
+```js
+// webpack.config.js
+const webpack = require('webpack')
+
+//...
+
+plugins: [
+
+        //...
+
+        new webpack.ProvidePlugin({
+            process: 'process/browser'
+        })
+    ],
+```
