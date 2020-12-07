@@ -18,8 +18,12 @@ var & const & let
 - 🔗[Loop](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/06_loop.md)
 - 🔗[Function](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/07_function.md)
 - 🔗[Object](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/08_object.md)
+- 🔗[class](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/09_class.md)
+- 🔗[async intro](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/10_async_intro.md)
+- 🔗[Promise](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/10_promise.md)
 
-### Dev
+### ETC
+
 - 🔗[Ajax](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/_ajax.md)
 - 🔗[Method-Collector](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/_all_collector.md)
 - 🔗[jQuery](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/_jquery.md)
