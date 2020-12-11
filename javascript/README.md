@@ -28,6 +28,3 @@ var & const & let
 - 🔗[Ajax](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/_ajax.md)
 - 🔗[Method-Collector](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/_all_collector.md)
 - 🔗[jQuery](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/_jquery.md)
-
-### Webpack
-- 🔗[webpack](https://github.com/hanbinleejoy/daily-dev-log/blob/master/javascript/webpack)

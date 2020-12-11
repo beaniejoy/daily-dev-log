@@ -58,3 +58,12 @@ event.stopPropagation();
 ```
 
 - [e.preventDefault() 와 stopPropagation() 의 차이](https://pa-pico.tistory.com/20)
+
+<br>
+
+## 🔖 window 크기
+
+```js
+document.body.scrollHeight // body 전체 scroll 고려한 높이
+document.body.scrollWidth // body 전체 scroll 고려한 너비
+```
