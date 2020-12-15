@@ -1,4 +1,4 @@
-# IDE Shortcut Key 
+# IDE Shortcut Key
 
 <br>
 
@@ -49,6 +49,7 @@
 | html 자동정렬        | `ctrl` + `k` → `ctrl`+ `f`        |
 | jsp import           | `ctrl` + `space`                  |
 | 왼쪽 menu bar 숨기기 | `ctrl` + `b`                      |
+| open terminal        | `ctrl` + `shift` + `              |
 
 <br>
 
