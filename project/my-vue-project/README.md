@@ -8,10 +8,13 @@
 
 ## 🏷️ To Do List
 
-- 전체적인 한글 font체 다시 적용
-- router 적용해보기
+### Vue Router
+  - **router 적용해보기**
+  - **Vue Router에 대해 공부할 것**
   - InfoWindow 나올 때 router 적용해보기
   - Detail Page에 대해서 router 적용해보기
+  - `/main/info/:id`: infoWindow 창
+  - `/detail/:id`: detail page
 
 ### Marker Clustering
 
@@ -27,8 +30,9 @@
 
 ### Detail Page
   
-- `locName`, `address` 부분 폰트 크기 및 스타일 수정
-- `date`도 적용
 - 전체적인 디자인 다시 수정
 
+### List Page
+
+- 왼쪽 List Bar 구성하기
 
