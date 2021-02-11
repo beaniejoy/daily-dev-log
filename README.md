@@ -1,6 +1,11 @@
 # 📖 daily dev log (개발 노트)
 개발 &amp; 공부 내용을 기록하는 저장소
 
+> [Notion](https://www.notion.so/daily-dev-log-ad6bf33516c34b69a9e3e947185fafe0)으로 모든 개발노트 이관    
+> daily dev log Repo는 비활성화합니다.  
+> 앞으로 모든 개발노트는 Notion으로 작업할 예정
+
+
 - written by hanbinleejoy(Beanie)
 - since 20.04.10
 
